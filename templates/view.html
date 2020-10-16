@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal website</title>
+    <link rel="stylesheet" href="{% static 'view.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://kit.fontawesome.com/1bcf95594a.js" crossorigin="anonymous"></script>
+</head>
+<body class="noScroll">
+    <div class="loading">
+        <div class="logo"><h2>Mohammed H.</h2></div>
+        <div class="loadingText">Loading . . .</div>
+    </div>
+    <header>
+        <div class="title">
+            <h3>Mohammed Hassan</h3><h4>Web Developer</h4>
+        </div>
+        <div class="burgerMenu">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="navBar">
+            <ul class="normalMenu">
+                <li class="active">Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="siteBg home">
+            <div class="siteTitles">
+                <h3 class="subTitle">this is my personal</h3>
+                <h1 class="mainTitle">website</h1>
+                <div class="button">order now</div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="aboutContent">
+            <h1 class="lineTop">About me</h1>
+            <p></p> 
+            <div class="button">My Works</div>
+            </div>
+            <div class="aboutImg" >
+                <img src="{% static 'imgs/me.jpg' %}" alt="My Photo">
+            </div>
+        </div>
+        <div class="br"></div>
+        <div class="services">
+            <div class="servicesTitle">
+                <h2>Services</h2>
+                <h4>There's A Few Services Below You Can Chose one So I Can Help You !</h4>
+            </div>
+            <div class="plans">
+                <ul>
+                    <li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="frontFace">
+                                    <img src="{% static 'imgs/icons8-maintenance-100.png' %}" alt="mintenance">
+                                    <h1>Basic Website</h1>
+                                    <h3>Full Website With 1 Page</h3>
+                                    <h4><span class="primaryColor">Hover ! </span> To See The Detalis Of This Service</h4>
+                                    <h2>For <span class="primaryColor">10 $</span></h2>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="backFace">
+                                    <h1 class="lineTop primaryColor">Detalis :</h1>
+                                    <p>You are Buying An Online Website ( Uploded on Heroku Host Service ) Without a domain name ,
+                                        it Contains 1 Page Only , And it Takes 7-10 Days to Done . </p>
+                                    <div class="button planButton"> Buy Now </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="frontFace">
+                                    <img src="{% static 'imgs/icons8-maintenance-100.png' %}" alt="mintenance">
+                                    <h1>Basic Website</h1>
+                                    <h3>Full Website With 1 Page</h3>
+                                    <h4><span class="primaryColor">Hover ! </span> To See The Detalis Of This Service</h4>
+                                    <h2>For <span class="primaryColor">10 $</span></h2>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="backFace">
+                                    <h1 class="lineTop">Detalis :</h1>
+                                    <p>You are Buying An Online Website (Uploded on Heroku Platform) Without a domain name ,
+                                        it Contains 1 Page Only , And it Takes 7-10 Days to Done . </p>
+                                    <div class="button planButton"> Buy Now </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="frontFace">
+                                    <img src="{% static 'imgs/icons8-maintenance-100.png' %}" alt="mintenance">
+                                    <h1>Basic Website</h1>
+                                    <h3>Full Website With 1 Page</h3>
+                                    <h4><span class="primaryColor">Hover ! </span> To See The Detalis Of This Service</h4>
+                                    <h2>For <span class="primaryColor">10 $</span></h2>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="backFace">
+                                    <h1 class="lineTop">Detalis :</h1>
+                                    <p>You are Buying An Online Website (Uploded on Heroku Platform) Without a domain name ,
+                                        it Contains 1 Page Only , And it Takes 7-10 Days to Done . </p>
+                                    <div class="button planButton"> Buy Now </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="desc">
+                <h2 class="title lineTop">CONTACT</h2>
+                <ul>
+                    <li>Address : 
+                        Iraq , Najaf Use The Number Below
+                        To Contact Me . 
+                    </li>
+                    <li>Whatsapp : 07805002249 .</li>
+                    <li>Email : Mohameedaws93@gmail.com .</li>
+                </ul>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/hhm0dy_fz" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/mhamadaws" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/mohhas" target="blank"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scrollTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+    <script src="{% static 'view.js' %}"></script>
+</body>
+</html>
