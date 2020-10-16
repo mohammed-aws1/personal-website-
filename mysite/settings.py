@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '!=q#pynlo39dbejpz3snf#ljgy@*zvny+22-sw$zy(s@rekmv5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://mohammed-site.herokuapp.com/']
 
@@ -128,4 +127,3 @@ AWS_ACCESS_KEY_ID = 'AKIAZIQL6SMK2LFMRN44'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-django_heroku.settings(locals())
