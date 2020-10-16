@@ -123,9 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static_root',
-]
 AWS_STORAGE_BUCKET_NAME = 'm7a7a-website'
 AWS_ACCESS_KEY_ID = 'AKIAZIQL6SMK2LFMRN44'
 AWS_SECRET_ACCESS_KEY = '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'
